@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    testing
     <PokemonList />
   </div>
 </template>
