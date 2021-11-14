@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    testing heroku
+    testing
     <PokemonList />
   </div>
 </template>
