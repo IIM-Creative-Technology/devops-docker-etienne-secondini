@@ -61,5 +61,5 @@ jobs:
       - name: "Deploy to Heroku"
         run: dpl --provider=heroku --app=${{secrets.HEROKU_APP}} --api-key=${{secrets.HEROKU_API_KEY}} --skip_cleanup=true
   licence-analysis:
-      - name: Qodana - License Audit
+    - name: Qodana - License Audit
       uses: JetBrains/qodana-license-audit-action@v2.0-eap
