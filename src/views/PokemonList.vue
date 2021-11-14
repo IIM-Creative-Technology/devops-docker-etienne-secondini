@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="pokemon in pokemonList" :key="pokemon.id">
+  <div class="centerDiv maxWidth">
+    <div class="m3" v-for="pokemon in pokemonList" :key="pokemon.id">
       <router-link
         :to="{ name: 'PokemonDetails', params: { pokemon: pokemon } }"
       >
@@ -55,5 +55,14 @@ li {
 }
 a {
   color: #42b983;
+}
+.maxWidth {
+  max-width: 50vw;
+}
+.centerDiv {
+  margin: 0 auto;
+}
+.m3 {
+  margin-bottom: 30px;
 }
 </style>

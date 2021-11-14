@@ -1,11 +1,15 @@
 <template>
-  <v-card>
+  <v-card class="maxWidth">
     <v-card-title> {{ pokemonInfo.name }} </v-card-title>
     <v-card-text>
-      <span v-for="type in pokemonInfo.types" :key="type.id">
-        {{ type.type.name }}
+      <span v-for="(type, index) in pokemonInfo.types" :key="type.id">
+        types{{ index + 1 }}: {{ type.type.name }} <br />
       </span>
-      {{ pokemonInfo.id }}
+      poids: {{ pokemonInfo.weight }} kg<br />
+      taille: {{ pokemonInfo.height }} cm<br />
+      <span v-for="(ability, index) in pokemonInfo.abilities" :key="ability.id">
+        Ability {{ index + 1 }}: {{ ability.ability.name }} <br />
+      </span>
     </v-card-text>
   </v-card>
 </template>
@@ -20,6 +24,7 @@ export default {
     return {
       pokemonInfo: {},
       types: [],
+      abilities: [],
     };
   },
   mounted() {
@@ -38,4 +43,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.maxWidth {
+  max-width: 60vw;
+}
+</style>
