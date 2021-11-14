@@ -1,7 +1,10 @@
 <template>
   <div>
     <div v-for="pokemon in pokemonList" :key="pokemon.id">
-      <Card :pokemon="pokemon" />
+      <router-link :to="{ name: 'details', params: { projectId: project.id } }"
+        >{{ project.name }}
+        <Card :pokemon="pokemon" />
+      </router-link>
     </div>
   </div>
 </template>
