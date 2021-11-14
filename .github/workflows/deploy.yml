@@ -60,3 +60,11 @@ jobs:
 
       - name: "Deploy to Heroku"
         run: dpl --provider=heroku --app=${{secrets.HEROKU_APP}} --api-key=${{secrets.HEROKU_API_KEY}} --skip_cleanup=true
+      - name: Running Page Speed Insights
+        uses: jakepartusch/psi-action@v1.2
+        id: psi
+        with:
+          url: "https://exodevops.herokuapp.com/"
+          threshold: 70
+          strategy: desktop
+          key: ${{ secrets.HEROKU_API_KEY }}
