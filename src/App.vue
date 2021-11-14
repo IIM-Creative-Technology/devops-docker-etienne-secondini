@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <PokemonList />
+    <div>
+      Je refais un test que j'ai loupé pour une entreprise j'utilise l'api :<a
+        href="https://pokeapi.co/api/v2/pokemon"
+        target="_blank"
+      >
+        Pokemon</a
+      >
+    </div>
+    <router-view />
   </div>
 </template>
 
 <script>
-import PokemonList from "./views/PokemonList.vue";
-
 export default {
   name: "App",
-  components: {
-    PokemonList,
-  },
 };
 </script>
 
