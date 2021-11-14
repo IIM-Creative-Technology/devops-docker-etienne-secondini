@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    testing hreok
+    testing
     <PokemonList />
   </div>
 </template>
