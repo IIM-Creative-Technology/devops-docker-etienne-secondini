@@ -1,24 +1,10 @@
 # pocker-monster
 
-## Project setup
-```
-npm install
-```
+npm run dev pour lancer en local
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+URL de la prod : https://exodevops.herokuapp.com/
+Pour les jobs il y a : un linter avec prettier 
+                       un check des dépendence
+                       le CI/CD
+                       Un audit des licences
+                       
